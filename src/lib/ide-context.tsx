@@ -60,6 +60,7 @@ interface State {
   containerStatus: "idle" | "booting" | "installing" | "running" | "error";
   containerError: string | null;
   containerLog: string;
+  started: boolean;
 }
 
 type Action =
@@ -72,7 +73,8 @@ type Action =
   | { type: "set-running"; running: boolean }
   | { type: "preview-url"; url: string | null }
   | { type: "container-status"; status: State["containerStatus"]; error?: string | null }
-  | { type: "container-log"; chunk: string };
+  | { type: "container-log"; chunk: string }
+  | { type: "start" };
 
 const initial: State = {
   files: STARTER_FILES,
@@ -91,6 +93,7 @@ const initial: State = {
   containerStatus: "idle",
   containerError: null,
   containerLog: "",
+  started: false,
 };
 
 function reducer(state: State, action: Action): State {
@@ -129,6 +132,8 @@ function reducer(state: State, action: Action): State {
       return { ...state, containerStatus: action.status, containerError: action.error ?? null };
     case "container-log":
       return { ...state, containerLog: (state.containerLog + action.chunk).slice(-20_000) };
+    case "start":
+      return { ...state, started: true };
     default:
       return state;
   }
@@ -198,6 +203,7 @@ export function IdeProvider({ children }: { children: ReactNode }) {
     const text = prompt.trim();
     if (!text || stateRef.current.running) return;
     const agent = stateRef.current.agent;
+    dispatch({ type: "start" });
     dispatch({
       type: "msg",
       message: { id: crypto.randomUUID(), role: "user", text, ts: Date.now() },
