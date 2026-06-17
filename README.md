@@ -1,3 +1,8 @@
+![License](https://img.shields.io/github/license/anomalyco/vibe-code)
+![Bun](https://img.shields.io/badge/bun-%23000000.svg?style=flat&logo=bun&logoColor=white)
+
+![Cover Image](public/cover.png)
+
 # 🚀 Vibe Coding Suite (`vibe.code`)
 
 Vibe Coding Suite is a multi-agent vibe coding IDE designed for a seamless, prompt-driven development experience. It allows you to orchestrate multiple AI agents—such as Claude Code, Codex, and OpenCode—to generate code and instantly preview the results in a live WebContainer sandbox.
