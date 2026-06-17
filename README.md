@@ -1,6 +1,3 @@
-![License](https://img.shields.io/github/license/dustinwloring1988/vibe-code)
-![Bun](https://img.shields.io/badge/bun-%23000000.svg?style=flat&logo=bun&logoColor=white)
-
 ![Cover Image](public/cover.png)
 
 # 🚀 Vibe Coding Suite (`vibe.code`)
