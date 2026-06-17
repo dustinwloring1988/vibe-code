@@ -1,0 +1,160 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Vibe Coding Suite — design system.
+ * Dark terminal aesthetic with neon accents (cyan / lime).
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-neon-cyan: var(--neon-cyan);
+  --color-neon-lime: var(--neon-lime);
+  --color-neon-magenta: var(--neon-magenta);
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+:root {
+  --radius: 0.625rem;
+
+  /* Forced dark — this is a coding tool */
+  --background: oklch(0.16 0.015 260);
+  --foreground: oklch(0.96 0.005 240);
+  --surface: oklch(0.20 0.018 260);
+  --surface-2: oklch(0.24 0.02 260);
+
+  --card: oklch(0.20 0.018 260);
+  --card-foreground: oklch(0.96 0.005 240);
+  --popover: oklch(0.22 0.02 260);
+  --popover-foreground: oklch(0.96 0.005 240);
+
+  --primary: oklch(0.85 0.18 180);                /* cyan */
+  --primary-foreground: oklch(0.16 0.015 260);
+  --secondary: oklch(0.28 0.025 260);
+  --secondary-foreground: oklch(0.96 0.005 240);
+  --muted: oklch(0.26 0.02 260);
+  --muted-foreground: oklch(0.68 0.02 250);
+  --accent: oklch(0.30 0.04 200);
+  --accent-foreground: oklch(0.96 0.005 240);
+  --destructive: oklch(0.68 0.22 25);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 10%);
+  --ring: oklch(0.85 0.18 180);
+
+  --neon-cyan: oklch(0.85 0.18 195);
+  --neon-lime: oklch(0.88 0.20 130);
+  --neon-magenta: oklch(0.72 0.27 330);
+
+  --gradient-aurora: radial-gradient(ellipse at top, oklch(0.30 0.10 200 / 0.45), transparent 60%),
+                     radial-gradient(ellipse at bottom right, oklch(0.30 0.10 320 / 0.30), transparent 60%);
+
+  --shadow-glow-cyan: 0 0 24px -4px oklch(0.85 0.18 195 / 0.55);
+  --shadow-glow-lime: 0 0 24px -4px oklch(0.88 0.20 130 / 0.45);
+}
+
+.dark {
+  /* same as root — single-theme app */
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html, body, #root {
+    height: 100%;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    background-image: var(--gradient-aurora);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background: oklch(0.85 0.18 195 / 0.30);
+    color: var(--color-foreground);
+  }
+
+  /* Scrollbars */
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background: oklch(1 0 0 / 8%);
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover { background: oklch(1 0 0 / 14%); }
+}
+
+@layer utilities {
+  .font-mono { font-family: var(--font-mono); }
+
+  .glass {
+    background: oklch(0.20 0.018 260 / 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--color-border);
+  }
+
+  .neon-border {
+    box-shadow:
+      0 0 0 1px oklch(0.85 0.18 195 / 0.35),
+      0 0 18px -4px oklch(0.85 0.18 195 / 0.55);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 18px oklch(0.85 0.18 195 / 0.65);
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(to right, oklch(1 0 0 / 4%) 1px, transparent 1px),
+      linear-gradient(to bottom, oklch(1 0 0 / 4%) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 0 0 oklch(0.85 0.18 195 / 0.5); }
+    50% { box-shadow: 0 0 20px 4px oklch(0.85 0.18 195 / 0); }
+  }
+  .pulse-glow { animation: pulse-glow 1.8s ease-in-out infinite; }
+
+  @keyframes blink { 50% { opacity: 0; } }
+  .caret-blink { animation: blink 1s steps(2, start) infinite; }
+}
