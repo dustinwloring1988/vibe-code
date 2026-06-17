@@ -1,0 +1,203 @@
+Copyright 2026 Dustinwloring1988
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file, except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-------------------------------------------------------------------------------
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE OF THE SOFTWARE
+
+   1. Grant of Copyright License. Subject to the terms and conditions
+      of this License, each Contributor hereby grants to You a
+      perpetual, worldwide, non-exclusive, no-charge, royalty-free
+      irrevocable (except as stated in this License) copyright
+      license to reproduce, prepare Derivative Works of, publicly
+      display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in the Work, or separately,
+      under the terms of this License, as follows:
+
+      (a) You may reproduce and distribute copies of the Work or
+          Derivative Works thereof, derived from the source or
+          binary forms of the Work, this License, and this file,
+          in whole or in part, in Any medium, with or without
+          modifications, and sublicense those derivatives
+          under the terms of this License, provided that You
+          meet the requirements of the following section 4,
+          if applicable.
+
+      (b) Conveyances of copies of the Work or Derivative Works
+          thereof must be accompanied by this License, in
+          plain text (provided that the text is somehow indicated,
+          although not necessarily included with each copy of
+          the Work, provided that copyright notice is preserved),
+          in workable form, or by a reference to where such
+          License terms may be found.
+
+   2. Grant of Patent License. Subject to the terms and conditions
+      of this License, each Contributor hereby grants to You a
+      perpetual, worldwide, non-exclusive, no-charge, royalty-free
+      irrevocable (except as stated in this License) patent license
+      to make, have made, use, offer to sell, sell, import and
+      otherwise transfer the Work and any Derivative Works thereof,
+      under the terms of this License. In the event that You assume
+      an obligation to actually or virtually provide warranty,
+      indemnity, or any other liability assuring that grants of
+      patent licenses and copyright licenses granted under this
+      License shall be implemented, then, in grating such warranties,
+      indemnity, or liability, You hereby agree to indemnify,
+      defend, and hold harmless the other Contributors from
+      liability for such warranties, indemnity, or breach of
+      warranty or liability.
+
+   3. Redistribution. You may distribute copies of the Work or
+      Derivative Works thereof under the terms of this License,
+      and ratify the above grants of copyright and patent
+      licenses to recipients of copies of the Work or Derivative Works
+      thereof, on an onward basis, provided that You give any
+      recipients of copies of the Work or Derivative Works a
+      copy of this License, and You comply with the following
+      conditions:
+
+      (a) You must give any recipients of copies of the Work or
+          Derivative Works a copy of this License;
+
+      (b) You must cause any recipients of copies of the Work or
+          Derivative Works that You modify to carry a prominent
+          notice stating that You changed the files;
+
+      (c) You must retain, in the Source form of any Derivative
+          Works that You distribute, all copyright, patent,
+          trademark, and attribution notices that are present
+          original works.
+
+      (d) If the Work distribution includes a "NOTICE" text file
+          as provided with the original Source form of the Work,
+          then the NOTICE text file must be distributed with all
+          Derivative Works that You distribute. All modification
+          distributors must retain all copyright, patent,
+          trademark, and attribution notices from the original
+          work, and add their own attribution notices. The NOTICE
+          file should only be used to record that copyright
+          pertains to the original work. The following
+          distributions are exempted from this requirement.
+
+          (i) Any modification made only to file names, directory
+              structures, command line interfaces, graphics
+              reproduction functions or other peripheral and
+              planetary material.
+
+          (ii) Any modification that contractual obligations notify
+               you may not modify the NOTICE file.
+
+          (iii) Distribution of the Work from a source repository
+               or mirroring site, if the Work is provided as an
+               Open Source project distributed under this license.
+
+      (e) Any Derivative Work that You distribute must be based on
+          the Work, either expressly or implicitly, provided that
+          Your modifications do not knowingly recuse or remove any
+          of the copyright, patent, trademark, or attribution
+          notices from the source forms of the Work.
+
+   4. Redistribution. You may distribute copies of the Work or
+      Derivative Works thereof under the terms of this License,
+      and ratify the above grants of copyright and patent
+      licenses to recipients of copies of the Work or Derivative Works
+      thereof, on an onward basis, provided that You give any
+      recipients of copies of the Work or Derivative Works a
+      copy of this License, and You comply with the following
+      conditions:
+
+      (a) You must give any recipients of copies of the Work or
+          Derivative Works a copy of this License;
+
+      (b) You must cause any recipients of copies of the Work or
+          Derivative Works that You modify to carry a prominent
+          notice stating that You changed the files;
+
+      (c) You must retain, in the Source form of any Derivative
+          Works that You distribute, all copyright, patent,
+          trademark, and attribution notices that are present
+          original works.
+
+      (d) If the Work distribution includes a "NOTICE" text file
+          as provided with the original Source form of the Work,
+          then the NOTICE text file must be distributed with all
+          Derivative Works that You distribute. All modification
+          distributors must retain all copyright, patent,
+          trademark, and attribution notices from the original
+          work, and add their own attribution notices. The NOTICE
+          file should only be used to record that copyright
+          pertains to the original work. The following
+          distributions are exempted from this requirement.
+
+          (i) Any modification made only to file names, directory
+              structures, command line interfaces, graphics
+              reproduction functions or other peripheral and
+              planetary material.
+
+          (ii) Any modification that contractual obligations notify
+               you may not modify the NOTICE file.
+
+          (iii) Distribution of the Work from a source repository
+               or mirroring site, if the Work is provided as an
+               Open Source project distributed under this license.
+
+      (e) Any Derivative Work that You distribute must be based on
+          the Work, either expressly or implicitly, provided that
+          Your modifications do not knowingly recuse or remove any
+          of the copyright, patent, trademark, or attribution
+          notices from the source forms of the Work.
+
+   5. Disclaimer of Warranty. Unless otherwise specified in your
+      DISTRIBUTION NOTICE, the Work is provided on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+      or implied, including, without limitation, any warranties or
+      conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or
+      FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible
+      for determining the appropriateness of using or redistributing
+      the Work and assume any risks associated with Your choice to
+      use the Work.
+
+   6. Limitation of Liability. Except as expressly stated in the
+      section above, in no event shall the Licensor be liable to
+      You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character,
+      including, without limitation, damages for loss of goodwill,
+      work stoppage, computer failure or business interruption,
+      any loss or damage to computer or records stored therein,
+      or damages resulting from misappropriation of the Work by
+      other parties, or intellectual property infringement,
+      regardless of whether You were advised on the possibility of
+      such damages.
+
+   7. Acronyms.
+      The following acronyms are defined in the following ways:
+      "Work" means the original form of the software.
+      "Derivative Work" means any work that is based on the Work.
+      "Contributor" means any person or entity who creates and
+      contributes a contribution to the Work.
+      "You" means anyone who makes use of this Document.
+
+   8. Termination.
+      This License shall terminate automatically if You fail to
+      comply with any of the terms and conditions of this License.
+      If after a cure of such failure the Licensor has not notified
+      You of the termination, then the License shall remain in
+      effect.
+
+   9. Governing Law.
+      This License shall be governed by the laws of the United States
+      of America.
